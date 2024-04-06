@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+}
+#nav #nav1 {
+    color: #2A4725;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Freight Big Pro;
+}
+#nav #nav3 #a{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav3 #a a{
+    text-decoration: none;
+    color: #2A4725;
+    font-size: 1.4vw;
+}
+
+#nav #nav2 img{
+    width: 250px;
+    margin-left: 80px;
+}
+
+#page1{
+    width: 100%;
+    min-height: 100vh;
+position: relative;
+padding-top: 8vh;
+}
+#page1 h1{
+    font-size: 5vw;
+    color: #2A4725;
+    text-transform: uppercase;
+    font-family: Freight Big Pro;
+line-height: 7vw;
+/* padding-left: 7vw; */
+text-align: center;
+}
+#videocontainer{
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+    padding: 2vw;
+}
+#videocontainer video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#videocontainer #play{
+    padding: 2vw 2vw;
+    background-color: #BBE3D1;
+    color: #2A4725;
+    font-size: 1.4vw;
+    text-transform: uppercase;
+    font-family: Freight Big Pro;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw 1vw;
+}
+#page2 h1{
+    font-family: Freight Big Pro;
+    text-align: center;
+    color: #2A4725;
+    font-size: 3vw;
+}
+#page2 #page2content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#page2content .content{
+    width: 31vw;
+    height: 35vw;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#page2content .content img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    margin-bottom: 30px;
+scale: 1.1;
+}
+
+#page2 .content .dets{
+    height: 45px;
+    width: 70%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 9;
+    background-color: #BBE3D1;
+    transition: all ease 0.5s;
+    overflow: hidden;
+    padding: 0.3vw;
+}
+.content .dets h3{
+    font-size: 28px;
+    color: #2A4725;
+    font-family: Freight Big Pro;
+ }
+.content .dets p{
+   margin-top: 20px;
+   font-size: 20px;
+   color: #2A4725;
+   font-family: Freight Big Pro;
+}
+
+#page2 .content .dets:hover{
+height: 200px;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page3 #part1{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 17vw 5vw;
+}
+#page3 #part1 h1{
+   font-size: 3.5vw;
+   font-family: Freight Big Pro;
+   color: #2A4725;
+}
+#page3 #part1 p{
+    margin-top: 1.5vw;
+    font-size: 1.5vw;
+    font-family: Freight Big Pro;
+    margin-bottom: 3vw;
+    color: #2A4725;
+ }
+ #page3 #part1 a{
+    padding: 1vw 4vw;
+    background-color: #BBE3D1;
+    border-radius: 50px;
+    text-decoration: none;
+color: #2A4725;
+    font-size: 25px;
+    font-family: Freight Big Pro;
+    font-weight: 800;
+ }
+ #page3 #part2{
+    width: 50%;
+    height: 100%;
+
+}
+#page3 #part2 img{
+    object-fit: cover;
+    width: 70%;
+    height: 100%;
+    object-position: bottom;
+}
+
+#project-page1{
+    width: 100%;
+   min-height: 100vh;
+
+}
+#kohefiza-content{
+    text-align: center;
+    padding: 1vw 5vw;
+}
+#kohefiza-content h1{
+    font-size: 40px;
+    font-family: Freight Big Pro;
+    font-weight: 600;
+}
+#kohefiza-content p{
+    font-size: 20px;
+    font-family: Freight Big Pro;
+    padding: 2vw 9vw;
+    text-transform: capitalize;
+}
+
+
+#project-page1 .kohefiza{
+    width: 100%;
+    height: 100%;
+    text-align: center;   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+}
+.kohefiza .images{
+    width: 30vw;
+    min-height: 23vw;
+}
+.images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#project-page2{
+    width: 100%;
+   min-height: 100vh;
+
+}
+
+#sanskriti-content{
+    text-align: center;
+    padding: 1vw 5vw;
+}
+#sanskriti-content h1{
+    font-size: 40px;
+    font-family: Freight Big Pro;
+    font-weight: 600;
+}
+#sanskriti-content p{
+    font-size: 20px;
+    font-family: Freight Big Pro;
+    padding: 2vw 9vw;
+    text-transform: capitalize;
+}
+
+#project-page2 .Sanskriti{
+    width: 100%;
+    height: 100%;
+    text-align: center;   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+}
+.Sanskriti .images{
+    width: 30vw;
+    min-height: 23vw;
+}
+
+#project-page3{
+    width: 100%;
+   min-height: 100vh;
+}
+#sanskriti-content{
+    text-align: center;
+    padding: 1vw 5vw;
+}
+#sanskriti-content h1{
+    font-size: 40px;
+    font-family: Freight Big Pro;
+    font-weight: 600;
+}
+#sanskriti-content p{
+    font-size: 20px;
+    font-family: Freight Big Pro;
+    padding: 2vw 9vw;
+    text-transform: capitalize;
+}
+
+#project-page3 .Sanskriti{
+    width: 100%;
+    height: 100%;
+    text-align: center;   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2vw;
+}
+.Sanskriti .images{
+    width: 30vw;
+    min-height: 23vw;
+}
+#page4{
+    width: 100%;
+    height: 120vh;
+}
+
+#page4-home{
+    width: 100%;
+    height: 15vw;
+     text-align: center;
+     padding: 5vw;
+}
+#page4-home p{
+    font-size: 24px;
+    font-family: Freight Big Pro;
+    text-transform: capitalize;
+    color: #2A4725;
+    font-weight: 600;
+}
+#page4-contact{
+    height: 100%;
+    width: 100%;
+    background-color: #BBE3D1;
+    display: flex;
+    padding: 8vw 0vw;
+    justify-content: center;
+    text-align: center;
+}
+#page4-contact #detail h1{
+    font-size: 24px;
+    color: #2A4725;
+    margin-bottom: 3vw;
+}
+#page4-contact #detail a{
+    font-size: 24px;
+    color: #2A4725;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vw 3vw;
+    border: 1px solid white;
+}
+
+#service-page1 {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 0vw 3vw;
+}
+#service-page1 #service-content{
+    width: 100%;
+    height: 17vw;
+    padding: 3vw 13vw;
+    border-bottom: 1px solid #2A4725;
+}
+#service-content h5{
+    font-size: 20px;
+    margin-bottom: 1vw;
+    color: #2A4725;
+}
+#service-content h1{
+    font-size: 27px;
+    font-family:  Freight Big Pro;
+    color: #2A4725;
+}
+
+#service-page1 .provide-services{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+}
+#service-img{
+    width: 50%;
+    height: 100%;
+}
+.provide-services img{
+    width: 20vw;
+    height: 25vw;
+    margin-top: 5vw;
+}
+.provide-services #maintainance {
+    width: 50%;
+    height: 50%;
+    padding: 1.8vw;
+    text-align: center;
+}
+.provide-services #maintainance h1 {
+  margin-bottom: 1.8vw;
+  font-size: 3vw;
+  font-family: Freight Big Pro;
+}
+.provide-services #maintainance h4 {
+    font-size: 1.3vw;
+    font-family: Freight Big Pro;
+    text-align: center;
+    margin-bottom: 1vw;
+  }
+
+  #service-page2 #page4{
+    width: 100%;
+    height: 60vh;
+  }
